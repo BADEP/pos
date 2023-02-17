@@ -10,6 +10,7 @@ msgstr ""
 "PO-Revision-Date: 2023-02-14 15:18+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -30,7 +31,8 @@ msgstr "Mostrar referencia interna"
 #. module: pos_product_display_default_code
 #: model_terms:ir.ui.view,arch_db:pos_product_display_default_code.res_config_settings_default_code_view_form
 msgid "Display products' internal reference in the PoS interface and tickets."
-msgstr "Mostrar referencia interna del producto en la interfaz del TPV y tickets."
+msgstr ""
+"Mostrar referencia interna del producto en la interfaz del TPV y tickets."
 
 #. module: pos_product_display_default_code
 #: model:ir.model,name:pos_product_display_default_code.model_pos_config
