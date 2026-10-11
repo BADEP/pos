@@ -1,4 +1,4 @@
-import {Component, useState} from "@odoo/owl";
+import {Component, proxy} from "@odoo/owl";
 import {Dialog} from "@web/core/dialog/dialog";
 import {usePos} from "@point_of_sale/app/hooks/pos_hook";
 import {EditOrderLineInput} from "./EditOrderLineInput.esm";
@@ -10,7 +10,7 @@ export class EditOrderPopup extends Component {
   setup() {
     super.setup();
     this._id = 0;
-    this.state = useState({array: this._initialize(this.props.array)});
+    this.state = proxy({array: this._initialize(this.props.array)});
     this.changes = {};
     this.pos = usePos();
     this.handleChange = this.handleChange.bind(this);

@@ -2,32 +2,32 @@
 <templates id="template" xml:space="preserve">
 
     <t t-name="EditOrderLineInput" owl="1">
-        <tr t-attf-class="order-line" t-att-data-id="props.item.id">
+        <tr t-attf-class="order-line" t-att-data-id="this.props.item.id">
             <td>
-                <t t-esc="props.item.name" />
+                <t t-esc="this.props.item.name" />
             </td>
             <td>
                 <input
-                    t-model="state.quantityInput"
+                    t-custom-model="this.state.quantityInput"
                     t-on-change="(ev) => this.onChange(ev)"
                     type="number"
                     name="quantity"
                 />
             </td>
             <td>
-                <t t-esc="props.item.uom" />
+                <t t-esc="this.props.item.uom" />
             </td>
             <td>
                 <input
-                    t-model="state.priceInput"
+                    t-custom-model="this.state.priceInput"
                     t-on-change="(ev) => this.onChange(ev)"
                     type="number"
                     name="price"
                 />
             </td>
-            <td t-if="pos.config.manual_discount">
+            <td t-if="this.pos.config.manual_discount">
                 <input
-                    t-model="state.discountInput"
+                    t-custom-model="this.state.discountInput"
                     t-on-change="(ev) => this.onChange(ev)"
                     type="number"
                     name="discount"
